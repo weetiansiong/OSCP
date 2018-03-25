@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>duplicate_of</key><string>08b50fcb-b704-4c82-8aca-ea5a9efb5164</string>
+  <key>title</key><string>Service Detection</string>
+  <key>nodeid</key><string>95dfdc12-81fb-4357-87f0-1e6c0d319dbf</string>
+  <key>modified_time</key><integer>1517592510</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1517512203</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>0</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

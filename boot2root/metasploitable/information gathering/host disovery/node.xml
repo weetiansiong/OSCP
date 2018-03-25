@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>duplicate_of</key><string>236d9e37-cd53-4b80-bee6-07ccd995d6fc</string>
+  <key>title</key><string>Host Disovery</string>
+  <key>nodeid</key><string>aee071fd-5dfe-48c5-8940-cf095d81db71</string>
+  <key>modified_time</key><integer>1517592924</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1517511227</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>0</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

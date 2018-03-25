@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Netdiscover</title>
+</head><body>Netdiscover is active/passive arp reconnaisense tool to discover mac address of machine in local subnet. <br/>
+<br/>
+Usage - netdiscover -i device -r netrange -p passive<br/>
+<br/>
+-i = specify the network interface to be used. If not specified netdiscover will use fisrt interface.<br/>
+-r = network range suppoerted (x.x.x.x/24, x.x.x.x/16, x.x.x.x/8)<br/>
+-p = passive mode. In passive mode netdisvoer does not send/inject any arp packtes. <br/>
+<br/>
+It will find only the mac address and ip of machines in local network ( same subnet). <br/>
+<br/>
+Notes to added on<br/>
+<ul><li>CIDR ntetwork notation</li>
+<li>ARP boundry restriction</li>
+</ul>
+</body></html>

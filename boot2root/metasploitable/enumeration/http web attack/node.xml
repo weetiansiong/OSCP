@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>duplicate_of</key><string>278996f7-7283-4f5a-bff9-1c9e341bed1b</string>
+  <key>title</key><string>Http Web attack</string>
+  <key>nodeid</key><string>f271ccf2-498c-4ccd-bf07-98e78fefaf89</string>
+  <key>modified_time</key><integer>1517594562</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1517594427</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>2</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>Executing reverse shell</string>
+  <key>nodeid</key><string>d57f250c-1348-4c0a-8298-2d49454571ae</string>
+  <key>modified_time</key><integer>1521565901</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1521565385</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>4</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

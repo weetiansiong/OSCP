@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Port Scan</title>
+</head><body>Tool: Nmap<br/>
+<br/>
+root@kali:~# nmap -Pn --system-dns -sS 192.168.56.101<br/>
+<br/>
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-02-02 22:54 IST<br/>
+Nmap scan report for 192.168.56.101<br/>
+Host is up (0.00080s latency).<br/>
+Not shown: 988 closed ports<br/>
+PORT &nbsp; &nbsp; STATE SERVICE<br/>
+21/tcp &nbsp; open &nbsp;ftp<br/>
+22/tcp &nbsp; open &nbsp;ssh<br/>
+23/tcp &nbsp; open &nbsp;telnet<br/>
+25/tcp &nbsp; open &nbsp;smtp<br/>
+53/tcp &nbsp; open &nbsp;domain<br/>
+80/tcp &nbsp; open &nbsp;http<br/>
+139/tcp &nbsp;open &nbsp;netbios-ssn<br/>
+445/tcp &nbsp;open &nbsp;microsoft-ds<br/>
+3306/tcp open &nbsp;mysql<br/>
+5432/tcp open &nbsp;postgresql<br/>
+8009/tcp open &nbsp;ajp13<br/>
+8180/tcp open &nbsp;unknown<br/>
+MAC Address: 08:00:27:65:7D:85 (Oracle VirtualBox virtual NIC)<br/>
+<br/>
+Nmap done: 1 IP address (1 host up) scanned in 0.82 seconds</body></html>

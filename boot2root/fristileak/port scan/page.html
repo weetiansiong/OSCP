@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Port Scan</title>
+</head><body>root@kali:~# nmap -Pn -A -T5 -v -p- 192.168.43.125<br/>
+<br/>
+Starting Nmap 7.40 ( https://nmap.org ) at 2018-03-16 07:58 EDT<br/>
+<br/>
+Nmap scan report for 192.168.43.125<br/>
+Host is up (0.00075s latency).<br/>
+Not shown: 65534 filtered ports<br/>
+PORT &nbsp; STATE SERVICE VERSION<br/>
+80/tcp open &nbsp;http &nbsp; &nbsp;Apache httpd 2.2.15 ((CentOS) DAV/2 PHP/5.3.3)<br/>
+| http-methods: <br/>
+| &nbsp; Supported Methods: GET HEAD POST OPTIONS TRACE<br/>
+|_ &nbsp;Potentially risky methods: TRACE<br/>
+| http-robots.txt: 3 disallowed entries <br/>
+|_/cola /sisi /beer<br/>
+|_http-server-header: Apache/2.2.15 (CentOS) DAV/2 PHP/5.3.3<br/>
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).<br/>
+<br/>
+MAC Address: 08:00:27:A5:A6:76 (Oracle VirtualBox virtual NIC)<br/>
+<br/>
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port<br/>
+Device type: general purpose<br/>
+Running: Linux 2.6.X|3.X<br/>
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3<br/>
+OS details: Linux 2.6.32 - 3.10, Linux 2.6.32 - 3.13<br/>
+<br/>
+Found only one open port HTTP at port 80<br/>
+</body></html>
